@@ -22,7 +22,7 @@
             min-height: 100vh;
             padding: 20px;
             text-shadow: 0 0 10px rgba(0, 255, 0, 0.5), 0 0 20px rgba(0, 255, 0, 0.4); /* Glowing text */
-            overflow: hidden;
+            overflow: auto;
         }
 
         .container {
@@ -47,6 +47,15 @@
             color: #00ff00; /* Glowing green */
             margin-bottom: 20px;
             position: relative;
+            text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+            animation: glitch 1.5s infinite alternate;
+        }
+        h2 {
+            font-size: 1em;
+            margin-bottom: 20px;
+            position: relative;
+            color: #00ff00; /* Glowing green */
+            text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
             animation: glitch 1.5s infinite alternate;
         }
 
@@ -124,7 +133,9 @@
             h1 {
                 font-size: 2em;
             }
-
+            h2 {
+                font-size 1em;
+            }
             .info p {
                 font-size: 0.9em;
             }
@@ -173,6 +184,7 @@
 <body>
     <div class="container">
         <h1>Crypto Mining</h1>
+        <h2>System Information Overview</h2>
         <div class="info">
             <p>This site is running <a href="https://www.coinimp.com/invite/5c749fe6-9220-4369-9374-af94a7f60c8c">CoinIMP</a> miner from JavaScript code. If you're interested in mining, you can start <a href="https://www.coinimp.com/invite/5c749fe6-9220-4369-9374-af94a7f60c8">here</a>.</p>
             <p>For coins that have been mined, they can be exchanged here on <a href="https://www.mintme.com/">MintMe</a>.</p>
@@ -273,5 +285,5 @@
     }, 1000); // Update setiap 1 detik
     </script>
 </body>
-</html>
-    
+                        </html>
+                            
